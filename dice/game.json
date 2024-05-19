@@ -1,0 +1,90 @@
+{
+    "Attack first die spot X": {
+        "type": "number",
+        "value": -600.0
+    },
+    "Attack first die spot Y": {
+        "type": "number",
+        "value": 100.0
+    },
+    "Bot attacking animation seconds": {
+        "type": "number",
+        "value": 0.0
+    },
+    "Cell size x": {
+        "type": "number",
+        "value": 25.0
+    },
+    "Cell size y": {
+        "type": "number",
+        "value": 25.0
+    },
+    "Defense first die spot X": {
+        "type": "number",
+        "value": -600.0
+    },
+    "Defense first die spot Y": {
+        "type": "number",
+        "value": -120.0
+    },
+    "Grid height": {
+        "type": "number",
+        "value": 39.0
+    },
+    "Grid offset x": {
+        "type": "number",
+        "value": -420.0
+    },
+    "Grid offset y": {
+        "type": "number",
+        "value": 1300.0
+    },
+    "Grid width": {
+        "type": "number",
+        "value": 29.0
+    },
+    "Max dice number": {
+        "type": "number",
+        "value": 12.0
+    },
+    "Number of obstacles": {
+        "type": "number",
+        "value": 60.0
+    },
+    "Player attacking animation seconds": {
+        "type": "number",
+        "value": 1.0
+    },
+    "Restriction bot": {
+        "type": "number",
+        "value": 38.0
+    },
+    "Restriction top": {
+        "type": "number",
+        "value": 23.0
+    },
+    "Seconds warning is present": {
+        "type": "number",
+        "value": 5.0
+    },
+    "Sprite scale": {
+        "type": "number",
+        "value": 0.25
+    },
+    "Team logo pos x": {
+        "type": "number",
+        "value": -530.0
+    },
+    "Team logo pos y": {
+        "type": "number",
+        "value": -6.0
+    },
+    "Upper msg pos x": {
+        "type": "number",
+        "value": -300.0
+    },
+    "Upper msg pos y": {
+        "type": "number",
+        "value": 340.0
+    }
+}
