@@ -8,6 +8,19 @@ import "team" for Team
 
 import "random" for Random
 
+var IS_NOT_PLAYING  = -1
+var IS_COMPUTER     = 0
+var IS_PLAYER       = 1
+
+var TEAM1 = IS_PLAYER
+var TEAM2 = IS_COMPUTER
+var TEAM3 = IS_COMPUTER
+var TEAM4 = IS_COMPUTER
+var TEAM5 = IS_COMPUTER
+var TEAM6 = IS_COMPUTER
+var TEAM7 = IS_NOT_PLAYING
+var TEAM8 = IS_NOT_PLAYING
+
 System.print("Game compiled")
 
 class GameState {
@@ -49,6 +62,7 @@ class Game {
 
         __game_state = GameState.choose_own_cell
 
+        __teams = []
 
         var image_team0 = Render.loadImage("[game]/assets/OSHD - Background/tile_type0.png")
         var image_team1 = Render.loadImage("[game]/assets/OSHD - Background/tile_type1.png")
@@ -59,16 +73,14 @@ class Game {
         var image_team6 = Render.loadImage("[game]/assets/OSHD - Background/tile_type6.png")
         var image_team7 = Render.loadImage("[game]/assets/OSHD - Background/tile_type7.png")
 
-        __teams = []
-
-        __teams.add(Team.new(Render.createSprite(image_team0, 0, 0, 1, 1), false, 0xF5AD1EFF))
-        __teams.add(Team.new(Render.createSprite(image_team1, 0, 0, 1, 1), false, 0x910C0CFF))
-        __teams.add(Team.new(Render.createSprite(image_team2, 0, 0, 1, 1), false, 0x57305EFF))
-        __teams.add(Team.new(Render.createSprite(image_team3, 0, 0, 1, 1), false, 0x3F8B0DFF))
-        __teams.add(Team.new(Render.createSprite(image_team4, 0, 0, 1, 1), false, 0x493426FF))
-        __teams.add(Team.new(Render.createSprite(image_team5, 0, 0, 1, 1), false, 0x1E70A1FF))
-        __teams.add(Team.new(Render.createSprite(image_team6, 0, 0, 1, 1), false, 0xA4DA64FF))
-        __teams.add(Team.new(Render.createSprite(image_team7, 0, 0, 1, 1), false, 0xACAEACFF))
+        if (TEAM1 != IS_NOT_PLAYING) { __teams.add(Team.new(Render.createSprite(image_team0, 0, 0, 1, 1), TEAM1 == IS_PLAYER, 0xF5AD1EFF)) }
+        if (TEAM2 != IS_NOT_PLAYING) { __teams.add(Team.new(Render.createSprite(image_team1, 0, 0, 1, 1), TEAM2 == IS_PLAYER, 0x910C0CFF)) }
+        if (TEAM3 != IS_NOT_PLAYING) { __teams.add(Team.new(Render.createSprite(image_team2, 0, 0, 1, 1), TEAM3 == IS_PLAYER, 0x57305EFF)) }
+        if (TEAM4 != IS_NOT_PLAYING) { __teams.add(Team.new(Render.createSprite(image_team3, 0, 0, 1, 1), TEAM4 == IS_PLAYER, 0x3F8B0DFF)) }
+        if (TEAM5 != IS_NOT_PLAYING) { __teams.add(Team.new(Render.createSprite(image_team4, 0, 0, 1, 1), TEAM5 == IS_PLAYER, 0x493426FF)) }
+        if (TEAM6 != IS_NOT_PLAYING) { __teams.add(Team.new(Render.createSprite(image_team5, 0, 0, 1, 1), TEAM6 == IS_PLAYER, 0x1E70A1FF)) }
+        if (TEAM7 != IS_NOT_PLAYING) { __teams.add(Team.new(Render.createSprite(image_team6, 0, 0, 1, 1), TEAM7 == IS_PLAYER, 0xA4DA64FF)) }
+        if (TEAM8 != IS_NOT_PLAYING) { __teams.add(Team.new(Render.createSprite(image_team7, 0, 0, 1, 1), TEAM8 == IS_PLAYER, 0xACAEACFF)) }
 
         var image_die0 = Render.loadImage("[game]/assets/OSHD - Icons/die/die0.png")
         var image_die1 = Render.loadImage("[game]/assets/OSHD - Icons/die/die1.png")
