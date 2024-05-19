@@ -5,6 +5,10 @@ My idea was to re-create a dice wars game from my childhood.
 
 **Special thanks** to [Bojan Endrovski](https://www.linkedin.com/in/bojanendrovski/) for the game jam and lessons about hexagons.
 
+*There is a small screenshot from the game:*
+![Screenshot from the game](/game.png)
+
+
 ## Game rules
 
 #### Setup
